@@ -252,6 +252,10 @@ video {
         display: flex;
         justify-content: space-between;
     }
+
+    .milf-para {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:1040px) {
@@ -260,15 +264,6 @@ video {
     }
 }
 
-/* @media screen and (max-width:584px) {
-    .video-grid {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-    }
-} */
 @media screen and (max-width:938px) {
     .video-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -295,11 +290,44 @@ video {
     .video-grid {
         column-gap: .2rem;
         row-gap: .2rem;
-        grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
     }
+
+    /* .brazzers-flex {
+        flex-direction: column;
+    } */
 }
 
-@media screen and (min-width:520px) {
+@media screen and (max-width:640px) {
+    .video-grid {
+        column-gap: .2rem;
+        row-gap: .2rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    /* .brazzers-flex {
+        display: block;
+    }
+
+    .article {
+        display: block;
+    }
+
+    .new-ino {
+        flex-direction: row;
+    }
+
+    .new-inoe {
+        flex-direction: row;
+    } */
+
+    /* .milf {
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
+@media screen and (max-width:520px) {
     .brazzer {
         font-size: 1rem;
     }
@@ -309,9 +337,26 @@ video {
         justify-content: space-around;
         align-items: center;
     }
+
+    .video-grid {
+        column-gap: .2rem;
+        row-gap: .2rem;
+        grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
+    }
+
+    .milf-para {
+        color: #D4D4D4;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:480px) {
+    .video-grid {
+        column-gap: .2rem;
+        row-gap: .2rem;
+        grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
+    }
+
     .brazzer {
         font-size: 1rem;
     }
@@ -345,6 +390,11 @@ video {
     .view {
         font-size: 1rem;
     }
+
+    .brazzers-flex {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:472px) {
@@ -356,5 +406,13 @@ video {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media screen and (max-width:429px) {
+    .video-grid {
+        column-gap: .2rem;
+        row-gap: .2rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
