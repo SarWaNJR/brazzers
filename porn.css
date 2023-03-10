@@ -479,7 +479,7 @@ video {
 
 /* JAVASCRIPT */
 .popup {
-    background-image: url(/images/vecteezy_fingerprint-identity-sensor-data-protection-system-podium_7164537.jpg);
+    background-image: url("./images/vecteezy_fingerprint-identity-sensor-data-protection-system-podium_7164537.jpg");
     object-fit: contain;
     object-position: center;
     width: 400px;
