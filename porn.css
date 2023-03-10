@@ -116,6 +116,9 @@ img {
     margin-bottom: 6rem;
 }
 
+a {
+    text-decoration: none;
+}
 
 .view {
     color: #D4D4D4;
@@ -207,7 +210,7 @@ video {
 
 ::selection.milf-para {
     color: #D4D4D4;
-    background: hotpink;
+    background-color: hotpink;
 }
 
 .article {
@@ -271,6 +274,7 @@ video {
     background-color: rgb(251, 202, 39);
     cursor: pointer;
 }
+
 .flex {
     display: flex;
     justify-content: space-evenly;
@@ -278,6 +282,12 @@ video {
 }
 
 /* Media querys */
+@media screen and (min-width:1200px) {
+    .video>img {
+        width: 420px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .title {
         display: flex;
@@ -449,4 +459,175 @@ video {
         padding: 2px;
         font-family: 'Roboto Serif', serif;
     }
+
+    .Join_form {
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    .Join_Id {
+        width: 30px;
+        padding: 7px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        font-size: .1rem;
+    }
+}
+
+/* JAVASCRIPT */
+.popup {
+    background-image: url("/images/vecteezy_fingerprint-identity-sensor-data-protection-system-podium_7164537.jpg");
+    object-fit: contain;
+    object-position: center;
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    padding: 16px;
+    margin: auto;
+    color: #D4D4D4;
+    text-align: center;
+    /* display: none; */
+    /* opacity: 0; */
+    transform: scale(0);
+    height: 0;
+    overflow: hidden;
+}
+
+.popup>input {
+    margin: auto;
+    width: 250px;
+    padding: 12px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-bottom: 1px;
+}
+
+::placeholder {
+    font-size: .8rem;
+    text-align: start;
+    color: rgb(73, 66, 66);
+}
+
+.popup>h2 {
+    color: rgb(251, 202, 39);
+    font-size: xx-large;
+}
+
+.popup>h3 {
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+.login_btn {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 8px;
+    width: 80px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(251, 202, 39);
+    cursor: pointer;
+}
+
+.new-js {
+    /* display: block; */
+    /* visibility: visible; */
+    /* opacity: 1; */
+    height: 60vh;
+    border-radius: 20px;
+    text-align: center;
+    transition: 2s;
+    width: 100%;
+    transform: scale(1);
+}
+
+/* join-button */
+.Join_form {
+    text-align: center;
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.907)), url('./images/join-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.popuptwo {
+    transform: scale(0);
+    height: 0;
+    overflow: hidden;
+}
+
+.h3-black {
+    color: #D4D4D4;
+}
+
+.brazzer-join {
+    font-size: 1.1rem;
+    color: #D4D4D4;
+}
+
+.brazzer-join>h3 {
+    margin-top: 4rem;
+    text-decoration: underline;
+}
+
+.join-margin {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.join-margin>h3 {
+    margin-bottom: 1rem;
+    /* background-color: aqua; */
+    margin-top: 0rem;
+}
+
+.Join_Id {
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.Join_Id::placeholder {
+    color: rgba(186, 185, 185, 0.727);
+}
+
+.login_btn-2 {
+    display: block;
+    background-color: rgb(63, 174, 234);
+    margin: auto;
+    padding: 12px;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    color: #D4D4D4;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.news-js {
+    /* display: block; */
+    /* visibility: visible; */
+    /* opacity: 1; */
+    height: 100vh;
+    border-radius: 20px;
+    text-align: center;
+    transition: 2s;
+    width: 100%;
+    transform: scale(1);
 }
