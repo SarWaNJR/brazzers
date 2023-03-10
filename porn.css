@@ -208,9 +208,9 @@ video {
     text-transform: capitalize;
 }
 
-::selection.milf-para {
+::selection{
     color: #D4D4D4;
-    background-color: hotpink;
+    background:hotpink;
 }
 
 .article {
