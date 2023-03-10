@@ -152,16 +152,6 @@ video {
     border: 2px solid hotpink;
 }
 
-.cover-2 {
-    width: 100%;
-}
-
-.add-2 {
-    height: 50vh;
-    object-fit: cover;
-    object-position: bottom;
-}
-
 .got {
     font-size: 2rem;
     color: #D4D4D4;
@@ -172,14 +162,52 @@ video {
 .porn-anal {
     font-size: 1.4rem;
     color: #D4D4D4;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    /* display: inline-block; */
+    /* text-decoration: underline;
+    text-decoration-color: rgb(251, 202, 39); */
 }
 
-.milf {
-    padding: 1rem;
+.porn-anal::before {
+    content: '';
+    display: block;
+    transform: scale(0);
+    background-color: rgb(254, 6, 200);
+    height: 4px;
+    transition: 2s;
+    transform-origin: left;
+}
+
+.porn-anal:hover::before {
+    width: 100%;
+    transform: scale(1);
+}
+
+.porn-anal::after {
+    content: '';
+    display: block;
+    transform: scale(0);
+    background-color: goldenrod;
+    height: 4px;
+    transition: 2s;
+    transform-origin: right;
+}
+
+.porn-anal:hover::after {
+    width: 100%;
+    transform: scale(1);
 }
 
 .milf-para {
     color: #D4D4D4;
+    text-transform: capitalize;
+}
+
+::selection.milf-para {
+    color: #D4D4D4;
+    background-color: hotpink;
 }
 
 .article {
@@ -201,10 +229,11 @@ video {
 }
 
 .new {
-    padding: 10px;
+    padding: 3px;
     color: #D4D4D4;
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+    font-family: monospace;
 }
 
 .addon {
@@ -212,8 +241,9 @@ video {
 }
 
 .email-inside {
-    width: 150px;
+    width: 280px;
     margin: 12px;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     outline: none;
@@ -221,31 +251,26 @@ video {
 }
 
 .zz {
+    display: block;
     color: rgb(251, 202, 39);
-    font-size: 1.2rem;
-    /* background-color: aqua; */
+    font-size: 2rem;
 }
 
 ::placeholder {
     color: gray;
     text-align: center;
+    font-size: 1.4rem;
 
 }
 
 .submit {
-    padding: 8px;
-    font-size: 1.8rem;
-    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
     border: none;
     background-color: rgb(251, 202, 39);
     cursor: pointer;
 }
-
-.author {
-    text-align: center;
-    height: 10vh;
-}
-
 .flex {
     display: flex;
     justify-content: space-evenly;
@@ -257,10 +282,6 @@ video {
     .title {
         display: flex;
         justify-content: space-between;
-    }
-
-    .milf-para {
-        text-align: center;
     }
 }
 
@@ -283,12 +304,7 @@ video {
     }
 
     .article {
-        width: 250px;
-    }
-
-    .milf-para {
-        width: 80%;
-        text-align: center;
+        width: 300px;
     }
 
     .porn-anal {
@@ -326,10 +342,6 @@ video {
         row-gap: .2rem;
         grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
     }
-
-    /* .brazzers-flex {
-        flex-direction: column;
-    } */
 }
 
 @media screen and (max-width:640px) {
@@ -355,11 +367,6 @@ video {
         column-gap: .2rem;
         row-gap: .2rem;
         grid-template-columns: repeat(auto-fit, minmax(213px, 1fr));
-    }
-
-    .milf-para {
-        color: #D4D4D4;
-        text-align: center;
     }
 }
 
@@ -432,8 +439,14 @@ video {
 
 @media screen and (max-width:410px) {
     .video-grid {
-        column-gap: .8rem;
-        row-gap: .8rem;
-        grid-template-columns: repeat(auto-fit, minmax(163px, 1fr));
+        column-gap: .2rem;
+        row-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    }
+
+    .milf-para {
+        text-align: start;
+        padding: 2px;
+        font-family: 'Roboto Serif', serif;
     }
 }
