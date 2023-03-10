@@ -10,6 +10,19 @@
 </head>
 
 <body>
+      <header class="Join_form">
+        <div class="popuptwo" id="popuptwo">
+            <div class="brazzer-join">
+                <h1>BRA<span class="z">ZZ</span>ERS</h1>
+                <h3>Sign Up Here!</h3>
+            </div>
+            <div class="join-margin">
+                <h3 class="h3-black"><span class="z">STEP1</span>Enter Your Mail</h3>
+                <input type="email" name="" id="Email_Id" class="Join_Id" placeholder="Enter Your Email">
+                <button type="button" class="login_btn-2" onclick="SubmitPapa()">CONTINUE TO START</button>
+            </div>
+        </div>
+    </header>
     <header>
         <div class="header">
             <div class="logo">
@@ -19,13 +32,21 @@
                 <h1>bra<span class="z">zz</span>ers</h1>
             </div>
             <div class="button">
-                <button type="button" class="btn-1">login</button>
-                <button type="button" class="btn-2">
-                    <p>join now</p>
-                </button>
+                <button type="button" class="btn-1" onclick="openPapa()">login</button>
+                <button type="button" class="btn-2" onclick="Jointhis()">join now</button>
             </div>
         </div>
     </header>
+    <div class="Login_form">
+        <div class="popup" id="popup">
+            <h2>Login Form</h2>
+            <h3>Email</h3>
+            <input type="email" name="" id="Email_Id" class="Email_Id" placeholder="Enter Your Email">
+            <h3>Password</h3>
+            <input type="password" name="" id="password" class="password" placeholder="Enter your Password">
+            <button type="button" class="login_btn" onclick="closeThapa()">Submit</button>
+        </div>
+    </div>
     <section class="add-sec">
         <div class="advertisement">
             <div class="cover-1">
@@ -37,7 +58,9 @@
         <div class="grid-one">
             <div class="title mt mb">
                 <h1 class="title-card">LATEST BRAZZERS IMAGES</h1>
-                <p class="view">View all</p>
+                 <a href="images.html" class="anchor-tag">
+                    <p class="view">View all</p>
+                </a>
             </div>
             <div class="video-grid">
                 <div class="video">
